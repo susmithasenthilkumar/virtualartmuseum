@@ -1,0 +1,6 @@
+{
+  "name": "Virtual Art Museum",
+  "description": "An immersive Virtual Art Museum featuring world-famous masterworks across curated wings, virtual 3D room walkthroughs, high-resolution magnifier, audio guides, curated tours, and private salon collection builder.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
