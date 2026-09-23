@@ -5,8 +5,10 @@ import fs from 'fs';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
+  const isProductionBuild = process.env.NODE_ENV === 'production';
+
   return {
-    base: process.env.GITHUB_ACTIONS ? '/virtualartmuseum/' : '/',
+    base: isProductionBuild || process.env.GITHUB_ACTIONS ? '/virtualartmuseum/' : '/',
     plugins: [
       react(), 
       tailwindcss(),
